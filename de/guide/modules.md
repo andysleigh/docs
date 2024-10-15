@@ -269,7 +269,7 @@ module.exports = function (moduleOptions) {
 
       // Customize existing loaders
       // Refer to source code for Nuxt internals:
-      // https://github.com/nuxt/nuxt.js/tree/dev/packages/builder/src/webpack/base.js
+      // https://github.com/nuxt/nuxt.js/blob/dev/packages/webpack/src/config/base.js
       const barLoader = config.module.rules.find(rule => rule.loader === 'bar-loader')
   })
 }
@@ -303,7 +303,7 @@ module.exports = function () {
 
   // Add hook for generate
   this.nuxt.hook('generate', async (generator) => {
-    // This will be called when a Nuxt generate starts
+    // This will be called when a Nuxt  starts
   })
 }
 ```

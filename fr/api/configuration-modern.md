@@ -3,7 +3,7 @@ title: "API: La propriété modern"
 description: Créez et servez un bundle moderne
 ---
 
-> Cette fonctionnalité est inspirée du [mode monderne vue-cli](https://cli.vuejs.org/guide/browser-compatibility.html#modern-mode) 
+> Cette fonctionnalité est inspirée du [mode moderne vue-cli](https://cli.vuejs.org/guide/browser-compatibility.html#modern-mode) 
 
 - Type: `String` or `Boolean`
   - Par défaut: false
@@ -41,6 +41,6 @@ ce cas seule l'option `client` est honorée et sélectionnée automatiquement lo
 | spa           | client        |
 
 - Le mode moderne pour `nuxt generate` peut seulement être `client`
-- Utilisez [`build.crossorigin`](/api/configuration-build#crossorigin) pour modifier l'attribut `crossorigin` dans `<link>` et `<script>`
+- Utilisez [`render.crossorigin`](/api/configuration-render#crossorigin) pour modifier l'attribut `crossorigin` dans `<link>` et `<script>`
 
 > Veuillez consulter [l'excellent article de Phillip Walton](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) pour plus de connaissances sur les constructions modernes.

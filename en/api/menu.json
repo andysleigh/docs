@@ -68,7 +68,6 @@
           { "name": "analyze", "to": "#analyze" },
           { "name": "babel", "to": "#babel" },
           { "name": "cache", "to": "#cache" },
-          { "name": "crossorigin", "to": "#crossorigin" },
           { "name": "cssSourceMap", "to": "#csssourcemap" },
           { "name": "devMiddleware", "to": "#devmiddleware" },
           { "name": "devtools", "to": "#devtools" },
@@ -108,6 +107,7 @@
         ]
       },
       { "name": "css", "to": "/configuration-css" },
+      { "name": "components", "to": "/configuration-components" },
       { "name": "dev", "to": "/configuration-dev" },
       { "name": "dir", "to": "/configuration-dir" },
       { "name": "env", "to": "/configuration-env" },
@@ -166,6 +166,7 @@
           { "name": "injectScripts", "to": "#injectscripts" },
           { "name": "resourceHints", "to": "#resourcehints" },
           { "name": "ssr", "to": "#ssr" },
+          { "name": "crossorigin", "to": "#crossorigin" },
           { "name": "ssrLog", "to": "#ssrlog" },
           { "name": "static", "to": "#static" },
           { "name": "dist", "to": "#dist" },
@@ -192,9 +193,25 @@
           { "name": "trailingSlash", "to": "#trailingslash" }
         ]
       },
+      {
+        "name": "runtimeConfig",
+         "to": "/configuration-runtime-config",
+         "contents": [
+          {
+            "name": "publicRuntimeConfig",
+            "to": "#public-runtime-config"
+          },
+          {
+            "name": "privateRuntimeConfig",
+            "to": "#private-runtime-config"
+          }
+        ]
+      },
       { "name": "server", "to": "/configuration-server" },
       { "name": "serverMiddleware", "to": "/configuration-servermiddleware" },
       { "name": "srcDir", "to": "/configuration-srcdir" },
+      { "name": "target", "to": "/configuration-target" },
+      { "name": "telemetry", "to": "/configuration-telemetry" },
       { "name": "transition", "to": "/configuration-transition" },
       { "name": "vue.config", "to": "/configuration-vue-config" },
       { "name": "watch", "to": "/configuration-watch" },
